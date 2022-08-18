@@ -1,82 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/pruebas.css"> 
+  <link rel="stylesheet" href="/css/style.css"> 
   <%- include('./partials/head.ejs') %>
   <title>Tickets To Go</title>
 </head>
 
 <body>
+  <%- include('./partials/header.ejs')%>
+    <!-- <header class="header">
+            <img class="logo" src="/img/Logo_transparente.png" alt="imagen header">
+    </header>
 
-<%-include('./partials/header.ejs')%>
+    <nav class="nav-bar">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/products/eventos">Eventos</a></li>
+        <li><a href="/#nos">Nosotros</a></li>
+        <li><a href="/#contact">Contactanos</a></li>
+    <li><br></li>
+    <div class="navicon">
+    <li><img class="carrito" src="./img/shopping-cart.png" alt=""></li></li>
+    <li><img class="usuario" src="./img/usuario.png" alt=""></li>
+    <li><a href="#">Registrate</a></li>
+    </div> 
+    </nav> -->
 
-<main>
-
-  <div class="espacio-header"></div>
-  <div class="slider-container">
-    <img src="/img/Slider.png" alt="slider_placeholder" class="slider">
-  </div>
-  
-  <div class="main-container">
-    <h2 class="title">-CONCIERTOS-</h2>
-    <section class="conciertos-container"> 
-      <li class="conciertos"> 
-        <img src="img/concierto 1.jpg" alt="concierto_1" class="image">
-        <h2 class="place">Buenos Aires, Argentina</h2> 
-        <h3 class="date">30/03/2022</h3>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quam unde voluptatem! Cumque incidunt animi fugiat error molestiae sapiente, vel illum aliquam deleniti odit expedita aspernatur a libero nostrum omnis?</p>
-        <div class="prize">$6969,69</div>
-      </li>
-      <li class="conciertos"> 
-        <img src="img/concierto 2.jpg" alt="concierto_2" class="image">
-        <h2 class="place">Monterrey, México</h2> 
-        <h3 class="date">23/04/2022</h3>
-        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, illum esse? Illo nisi molestias esse numquam omnis incidunt temporibus tenetur? Harum consequuntur laudantium eaque accusamus quas nisi velit corrupti quod?</p>
-        <div class="prize">$6969,69</div>
-      </li>
-      <li class="conciertos"> 
-        <img src="img/concierto 3.jpg" alt="concierto_3" class="image">
-        <h2 class="place">Cundinamarca, Colombia</h2> 
-        <h3 class="date">01/05/2022</h3>
-        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis sint animi dolor nemo ipsa, rerum fugit non placeat quos eligendi laudantium facilis natus sunt quod, reiciendis iste nulla. Voluptatibus, dolorum!</p>
-        <div class="prize">$6969,69</div>
-      </li>
-      <li class="conciertos"> 
-        <img src="img/concierto 4.jpg" alt="concierto_4" class="image">
-        <h2 class="place">Santiago, Chile</h2> 
-        <h3 class="date">12/06/2022</h3>
-        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, neque eaque, itaque temporibus enim, in odit sint id corporis qui fuga minima aliquam eius est consequuntur! Placeat non odio recusandae!</p>
-        <div class="prize">$6969,69</div>
-      </li>
-      <li class="conciertos"> 
-        <img src="img/concierto 1.jpg" alt="concierto_1" class="image">
-        <h2 class="place">Córdoba, Argentina</h2> 
-        <h3 class="date">25/9/2022</h3>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quam unde voluptatem! Cumque incidunt animi fugiat error molestiae sapiente, vel illum aliquam deleniti odit expedita aspernatur a libero nostrum omnis?</p>
-        <div class="prize">$6969,69</div>
-      </li>
-      <li class="conciertos"> 
-        <img src="img/concierto 1.jpg" alt="concierto_1" class="image">
-        <h2 class="place">Miami, USA</h2> 
-        <h3 class="date">29/10/2022</h3>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quam unde voluptatem! Cumque incidunt animi fugiat error molestiae sapiente, vel illum aliquam deleniti odit expedita aspernatur a libero nostrum omnis?</p>
-        <div class="prize">$6969,69</div>
-      </li>
+    <section class="contenedor eventos">
+        <article class="contenedor">
+            <h2 class="titulo">Eventos</h2>
+            <p class="text">Después de unos años de pandemia en el que no hubo conciertos por las restricciones del covid-19, 
+                TicketsToGo se alista para vivir de forma presencial 
+                la llegada de <span>A Star is Born</span> a la tarima.
+            </p>
+            <div class="contenedor-botones">
+                <a href="#" class="boton">Eventos</a>
+            </div>
+        </article>
     </section>
-  </div>
 
-  <div class="iframe-container">
-    <iframe width="320" height="216" src="https://www.youtube.com/embed/bo_efYhYU2A"  class="ytube" </iframe> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="iframe-container-tab">
-    <iframe width="750" height="505" src="https://www.youtube.com/embed/bo_efYhYU2A"  class="ytube" </iframe>title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="iframe-container-lap">
-    <iframe width="990" height="515" src="https://www.youtube.com/embed/bo_efYhYU2A"  class="ytube" </iframe>title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</main>    
+    <section class="contenedor servicios">
+        <h2 class="titulo">Servicios</h2>
+        <ul class="lista-servicios">
+            <li>
+                <h4 class="h4-servicios">Call Center</h4>
+                <figure>
+                    <img  class="icono" src="/img/centro-de-llamadas.png" alt="centro-llamadas">
+                    <p>Contamos con un call-center que resolvera todas tus dudas, antes, durante y despues del concierto.</p>
+                </figure>
+            </li>
+            <li>
+                <h4 class="h4-servicios">Asistencia</h4>
+                <figure>
+                    <img  class="icono" src="/img/bolsa-de-la-compra.png" alt="centro-llamadas">
+                    <p>Te acompanamos durante todo tu proceso de compra en nuestra plataforma y cualquier duda sera resuelta al momento.</p>
+                </figure>
+            </li>
+            <li>
+                <h4 class="h4-servicios">Cloud</h4>
+                <figure>
+                    <img class="icono" src="/img/nube.png" alt="Nube">
+                    <p>Todos los datos sobre tu compra se almacenan en la nube y puedes acceder desde cualquier dispositivo.</p>
+                </figure>
+            </li>
+        </ul>
+    </section>
 
-<%- include('./partials/footer.ejs')%> 
-
+    <section id="nos" class="contenedor nosotros">
+        <article class="cont-nosotros">
+            <h2 class="titulo">Nosotros</h2>
+            <p class="text-nos">“A Star is Born” se centra en Jackson Maine, un músico country veterano cuya carrera 
+                se encuentra en decadencia. Maine descubre a una talentosa cantante llamada Ally, una joven aspirante a 
+                estrella que sueña con triunfar en el apasionante mundo del espectáculo.
+            </p>
+            <br>
+            <p class="text-nos">En enero de 2011 se anunció que el proyecto estaba en marcha, aunque con Clint Eastwood
+                como director y Cooper y Beyoncé como potenciales protagonistas. Sin embargo, en marzo de 2015, Warner Bros.
+                actualizó que Cooper sería el responsable del proyecto y que debutaría como director en el mismo. El actor 
+                también siguió de cerca la producción y guion de la cinta.
+            </p>
+        </article>
+    </section>
+    <section class="contenedor youtube">
+        <div class="ycontain">
+            <div></div>
+            <iframe autoplay loop muted width="560" height="315" src="https://www.youtube.com/embed/bo_efYhYU2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+        <section id="contact" class="contenedor contacto">
+        <h2 class="titulo">Contactanos</h2>
+        <p class="text">Para cualquier duda sobre nuestros servicios o eventos, no dudes en contactarnos
+        </p>
+        <br>
+        <div class="forma">
+            <form action="/" method="POST">
+            <label>E-mail:</label>
+                <input class="correo" type="email" name="email" placeholder="E-mail" required />
+                <form action="/" method="POST">
+            <label>Mensaje:</label>
+            <textarea class="input" name="message" rows="3" cols="40"></textarea>
+            <br>
+        <div class="contenedor-botones">
+            <a href="#" class="boton">Enviar</a>
+        </div>
+        </div>
+    </section>
+    <%- include('./partials/footer.ejs')%> 
 </body>
 </html>
