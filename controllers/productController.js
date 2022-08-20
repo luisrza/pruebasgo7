@@ -38,8 +38,6 @@ const productController = {
 
         res.redirect('eventos');
 
-
-      
     },
     editarEvento: (req, res) => {
         let id= req.params.id;

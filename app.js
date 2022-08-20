@@ -34,7 +34,7 @@ app.set('views', path.join(__dirname,'views'));
 const publicPath = path.resolve(__dirname,'./public');
 app.use(express.static(publicPath)); // indica que siempre href va a buscar a la carpeta public
 
-// Aca configuramos los puertos y el hosto
+// Aca configuramos los puertos y el host
 
 const PORT = process.env.PORT || 4000;
 const HOST = process.env.HOST || 'localhost';

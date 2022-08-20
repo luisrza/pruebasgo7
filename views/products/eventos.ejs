@@ -5,113 +5,41 @@
 
 
 <body>
+
   <%-include('../partials/header.ejs')%>
 <main>
-  <section class="contenedor1">
-    <%for (let i=0;i < eventos.length ;i++){ %>
+  <%for (let i = 0; i < eventos.length ;i++){ %>
+  <section class="contenedor-eventos">
+    <% if (i % 2 == 0){%> 
+        <div><img class="image gris" src="/img/<%=eventos[i].image%>" alt="foto_concierto"></div>
+      <%}else{%>
+        <div ><img class="image" src="/img/<%=eventos[i].image%>" alt="foto_concierto"></div>
+    <%}%>
+  
       <div class="evento">
           <h2 class="date"><%=eventos[i].date%></h2>
-          <br>
           <p class="description"><%=eventos[i].description%></p>
-          <br>
-          <br>
-          <div class="contenedor-botones">
-              <a href="/detallesEvento.html" class="boton">Leer más</a>
+          <div class="contenedor-botones evento-boton">
+              <a href="/products/eventos/detalles/<%=eventos[i].place%>" class="boton boton-eventos">Leer más</a>
+          </div>       
+          <% if (locals.isLogged){ %> 
+          <div class="contenedor-editar">
+            <button type="button" class="boton-editar"><img class="mas" src="../img/editar.png" alt="editar"></button>
+            <button type="button" class="boton-editar"><img class="mas" src="../img/mas.png" alt="agregar"></button>
+            <button type="button" class="boton-editar"><img class="menos" src="../img/menos.png" alt="eliminar"></button>
           </div>
-          <br>
-          <br>
-          <button type="button" class="boton-editar"><img class="mas" src="./img/mas.png" alt=""></button>
-          <br>
-          <button type="button" class="boton-editar"><img class="menos" src="./img/menos.png" alt=""></button>
+          <%}%>
       </div>
-      
-      <div class="place">
-          <h3><%= eventos[i].place %></h3>
-      </div>
-      <%}%>
+
+      <% if (i % 2 == 0){%> 
+        <h3 class="place"><%= eventos[i].place %></h3>
+      <%}else{%>
+        <h3 class="place h3-imagen"><%= eventos[i].place %></h3>
+    <%}%>
+
   </section>
-  
-  <section class="contenedor2">
-      <div class="evento r">
-          <h2>Concierto</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Et, molestiae nam. Fugit sequi voluptate voluptatum.</p>
-          <br>
-          <div class="contenedor-botones">
-              <a href="/detallesEvento.html" class="boton">Leer más</a>
-          </div>
-          <br>
-          <br>
-          <button type="button" class="boton-editar"><img class="mas" src="./img/mas.png" alt=""></button>
-          <br>
-          <button type="button" class="boton-editar"><img class="menos" src="./img/menos.png" alt=""></button>
-      </div>
-      <div class="ciudad">
-          <h3>MEXICO</h3>
-      </div>
-  </section>
-  
-  <section class="contenedor3">
-      <div class="evento">
-          <h2>Concierto</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Et, molestiae nam. Fugit sequi voluptate voluptatum.</p>
-          <br>
-          <div class="contenedor-botones">
-              <a href="/detallesEvento.html" class="boton">Leer más</a>
-          </div>
-          <br>
-          <br>
-          <button type="button" class="boton-editar"><img class="mas" src="./img/mas.png" alt=""></button>
-          <br>
-          <button type="button" class="boton-editar"><img class="menos" src="./img/menos.png" alt=""></button>
-      </div>
-      <div class="ciudad">
-          <h3>COLOMBIA</h3>
-      </div>
-  </section>
-  <section class="contenedor4">
-      <div class="evento r">
-          <h2>Concierto</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Et, molestiae nam. Fugit sequi voluptate voluptatum.</p>
-          <br>
-          <div class="contenedor-botones">
-              <a href="/detallesEvento.html" class="boton">Leer más</a>
-          </div>
-          <br>
-          <br>
-          <button type="button" class="boton-editar"><img class="mas" src="./img/mas.png" alt=""></button>
-          <br>
-          <button type="button" class="boton-editar"><img class="menos" src="./img/menos.png" alt=""></button>
-      </div>
-      <div class="ciudad">
-          <h3>CHILE</h3>
-      </div>
-  </section>
-  <section class="contenedor5">
-      <div class="evento">
-          <h2>Concierto</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Et, molestiae nam. Fugit sequi voluptate voluptatum.</p>
-          <br>
-          <div class="contenedor-botones">
-              <a href="/detallesEvento.html" class="boton">Leer más</a>
-          </div>
-          <br>
-          <br>
-          <button type="button" class="boton-editar"><img class="mas" src="./img/mas.png" alt=""></button>
-          <br>
-          <button type="button" class="boton-editar"><img class="menos" src="./img/menos.png" alt=""></button>
-      </div>
-      <div class="ciudad">
-          <h3>CANADA</h3>
-      </div>
-  </section>
+  <%}%>
+
   </main>
   <%-include('../partials/footer.ejs')%>
   </body>

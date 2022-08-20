@@ -193,7 +193,6 @@ const usersController = {
     },
 
     registrado:  (req, res) => {
-       
         res.render('./users/registrado')
     },
 
