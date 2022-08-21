@@ -425,6 +425,7 @@ input{
 }
 
 footer{
+    
     background-color: var(--barra);
 }
 
@@ -589,6 +590,7 @@ body{
 main{
     width: 100%;
 }
+
 .contenedor-eventos{
     position: relative;
     display: flex;
@@ -606,7 +608,6 @@ main{
     justify-self:left;
 }
 .gris{
-    
     filter: grayscale(100);
 }
 h2{
@@ -620,7 +621,7 @@ h2{
 h3{
     font-size: 25px;
     color: var(--fondo);
-    filter: drop-shadow(3px 1px 1px var(--blanco2));
+    filter: drop-shadow(3px 1px 1px var(--negro));
     font-family: 'Montserrat Subrayada', sans-serif;
     padding-right: 25px;
     padding-bottom: 20px;
@@ -631,6 +632,28 @@ h3{
 .place.h3-imagen{
     color: white;
     filter: drop-shadow(3px 2px 3px var(--fondo));
+}
+.agotado{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: 5px dashed red;
+    color: red;
+    margin-left: 5px;
+    vertical-align: baseline;
+    height: 50px;
+    padding-left: 5px;
+    width: 250px;
+    margin: 0 auto;
+    filter: drop-shadow(3px 1px 1px var(--negro));
+}
+@media (min-width: 768px) {
+    .agotado{
+        writing-mode: vertical-lr;
+        width: 50px;
+        padding-right: 5px;
+        height: auto;
+    }
 }
 .contenedor-botones.evento-boton{
     position: absolute;
@@ -764,6 +787,11 @@ h4{
 .description{
     padding: 15px;
 }
+.main-concierto{
+    display: block;
+    background-color: var(--fondo);
+    padding-bottom: 50px;
+}
 
 .titulo-d {
     padding-top: 25px;
@@ -790,6 +818,13 @@ h4{
     width: 100%;
     border: .1px solid var(--barra);
 }
+.contenedor-concierto{
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+
+}
 
 .texto_concierto {
     padding-right: 20px;
@@ -806,7 +841,6 @@ h4{
     width: 600px;
     filter: drop-shadow(1px 5px 1px var(--fondo));
     font-size: 22px;
-    padding-top: 10px;
     }
     .imagen_contenedor{
         height: 100vmin;
@@ -824,12 +858,6 @@ h4{
     main{
         flex-direction: row;
     }
-}
-
-.contenedor-concierto{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 @media (min-width: 768px) {
     .contenedor-concierto{
@@ -852,15 +880,15 @@ h4{
         font-size: 28px;
         padding-top: 10px;
         }
-        h4{
-            font-size: 80px;
-        }
-        h4:hover{
-            color: var(--barra);
-            transition: ease-in-out 1.5s;
-        }
+    h4{
+        font-size: 80px;
+    }
+    h4:hover{
+        color: var(--barra);
+        transition: ease-in-out 1.5s;
+    }
     .titulo-d h1{
-        margin-top: 10px;
+
         font-size: 100px;
     }
 
@@ -868,7 +896,7 @@ h4{
         transition: ease-in-out 1.5s;
         filter: grayscale(0);
     }
-    .contenedor-boton{
-        padding-bottom: 10px;
+    .contenedor-ciudad{
+        padding-top: 2vmax;
     }
 }

@@ -25,8 +25,6 @@ const mainController = {
         //res.sendFile(path.join(__dirname, '../views/pruebas.html'));
         res.render('404');
     },
-
-
 }
 
 

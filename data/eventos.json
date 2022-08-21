@@ -6,7 +6,7 @@
     "currency": "U$S",
     "description": "Después de graduarse de Oxford en 1943 con títulos en inglés y literatura inglesa, Larkin comenzó a trabajar como bibliotecario. Durante los treinta años en los que se desempeñó como bibliotecario universitario en la Biblioteca Brynmor Jones de la Universidad de Hull produjo la mayor parte de su obra publicada. Sus poemas están marcados por lo que el poeta inglés Andrew Motion describe como una «exactitud melancólica y muy inglesa para tratar las emociones, los lugares y las relaciones».",
     "id": 1659119947369,
-    "agotado": "No",
+    "agotado": "Yes",
     "image": "image-1659119947350.jpg"
   },
   {
@@ -46,7 +46,7 @@
     "currency": "U$S",
     "description": "Después de graduarse de Oxford en 1943 con títulos en inglés y literatura inglesa, Larkin comenzó a trabajar como bibliotecario. Durante los treinta años en los que se desempeñó como bibliotecario universitario en la Biblioteca Brynmor Jones de la Universidad de Hull produjo la mayor parte de su obra publicada. Sus poemas están marcados por lo que el poeta inglés Andrew Motion describe como una «exactitud melancólica y muy inglesa para tratar las emociones, los lugares y las relaciones».",
     "id": 1659120149034,
-    "agotado": "No",
+    "agotado": "Yes",
     "image": "image-1659120149027.jpg"
   },
   {
@@ -58,15 +58,5 @@
     "id": 1659119947367,
     "agotado": "No",
     "image": "image-1659119947350.jpg"
-  },
-  {
-    "place": "Veracruz",
-    "date": "2022-08-23",
-    "prize": "450",
-    "currency": "$",
-    "description": "todosofdonfasdn kjdsfnofnadslfn sdaojfnasdjolfn asd oljnsdfajlo",
-    "id": 1660931986927,
-    "agotado": "No",
-    "image": "image-1660931986924.jpg"
   }
 ]

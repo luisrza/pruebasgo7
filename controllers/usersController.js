@@ -112,9 +112,6 @@ const usersController = {
             res.render('users/editarUsuario',{userToEdit})
         }
 
-       
-
-        
     },  
     eliminarUsuario: (req,res) => {
 
@@ -160,7 +157,6 @@ const usersController = {
             user: req.body.user,  
             nacimiento: req.body.nacimiento,
             email: req.body.email,
-            
         }
 
         for (i=0;i<users.length;i++){
@@ -187,8 +183,6 @@ const usersController = {
             
             res.render('./users/register',{error,newUsuario});
         }
-
-       
 
     },
 
