@@ -24,14 +24,12 @@ const productController = {
     creandoEvento: (req, res) => {
         let newEvento = req.body;
         
-
         newEvento.id = Date.now();
         newEvento.agotado = "No";
 
         let imagen = req.file;
 		newEvento.image = imagen.filename;
 		
-   
         eventos.push(newEvento);
 
         fs.writeFileSync(productsFilePath, JSON.stringify(eventos, null, 2));

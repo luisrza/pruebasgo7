@@ -183,6 +183,7 @@ span{
 }
 
 .titulo{
+    padding-top: 40px;
     font-family: 'Uchen', serif;
     margin-bottom: 30px;
     font-size: 40px;
@@ -472,10 +473,6 @@ footer{
     display: flex;
 }
 
-.password{
-
-}
-
 .txt-pass {
     font-family: 'Roboto Mono', monospace;
     color: var(--barra);
@@ -528,6 +525,8 @@ footer{
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     font: 100;
+    background-color: var(--fondo);
+    cursor: pointer;
 }
 .contenedor-editar{
     padding: 10px;
@@ -543,7 +542,7 @@ footer{
         padding-bottom: 10px;
         padding-left: 35px;
         padding-right: 35px;
-        background-color: var(--gris);
+        background-color: var(--fondo);
         border-color: var(--barra);
         border-width: 3px;
         border-style: solid;
@@ -563,6 +562,12 @@ footer{
 
 @media (min-width: 768px) {
     .contenedor-boton:hover{
+        transition: ease-in-out .5s;
+        filter: drop-shadow(1px 3px 10px var(--barra));
+        border: solid 3px var(--blanco1);
+        color: var(--blanco1);
+    }
+    .botones:hover{
         transition: ease-in-out .5s;
         filter: drop-shadow(1px 3px 10px var(--barra));
         border: solid 3px var(--blanco1);
@@ -709,9 +714,7 @@ h4{
     flex-direction: column;
 }
 @media (min-width: 768px) {
-    .contenedor-botones.evento-boton{
-        
-    }
+
     .boton.boton-eventos{
         position: static;
         margin-bottom: 37vmax;
@@ -788,7 +791,8 @@ h4{
     padding: 15px;
 }
 .main-concierto{
-    display: block;
+    flex-direction: column;
+    display: flex;
     background-color: var(--fondo);
     padding-bottom: 50px;
 }
@@ -820,13 +824,16 @@ h4{
 }
 .contenedor-concierto{
     display: flex;
-   
     justify-content: center;
     flex-direction: column;
+    contain: inherit;
+  
 
 }
 
 .texto_concierto {
+    display: flex;
+    flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
     color: var(--blanco2);
@@ -864,6 +871,8 @@ h4{
         display: flex;
         justify-content: center;
         flex-direction: row;
+        height: 50vmax;
+        contain: content;
     }
     .imagen_concierto{
         height: 100vmin;
@@ -888,7 +897,7 @@ h4{
         transition: ease-in-out 1.5s;
     }
     .titulo-d h1{
-
+        display: flex;
         font-size: 100px;
     }
 
@@ -898,5 +907,78 @@ h4{
     }
     .contenedor-ciudad{
         padding-top: 2vmax;
+    }
+}
+
+.detalles-editar-contenedor{
+    background-color: var(--barra);
+    display: flex;
+    padding-bottom: 50px;
+}
+
+
+
+.boton.editar{
+    width: auto;
+    cursor:pointer;
+}
+.boton.boton-agotado{
+    background-color: red;
+    color: white;
+}
+
+.boton.carrito{
+    cursor:pointer;
+    background-color: var(--fondo);
+}
+
+/*------------------------Registro y crear evento y 404-------------------------*/
+.registro{
+    background-color: var(--fondo);
+}
+
+.form_reg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs{
+    margin: 0 auto;
+}
+
+.botones-registro{
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+}
+
+.btn-regis{
+    width: 500px;
+    margin: 0 auto;
+}
+.container-404{
+    margin: 50px;
+}
+.links{
+    color: var(--blanco1);
+}
+button{
+    background-color: var(--fondo);
+    cursor: pointer;
+}
+.check-log{
+    font-size: 15px;
+    padding-left: 10vmax;
+}
+
+@media (min-width: 768px) {
+    .botones-registro{
+        flex-direction: row;
+    }
+    .links:hover{
+        color: var(--barra);
+        transition: ease-in-out .75s;
     }
 }

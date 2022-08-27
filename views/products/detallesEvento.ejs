@@ -12,41 +12,41 @@
     <main class="main-concierto">
       <div class="titulo-d">
         <h1 class="concierto-d"><%= evento.place %></h1>
-    </div>
+      </div>
     <section class="contenedor-concierto">
-    <div class="imagen_contenedor">
-        <img src="/img/<%=evento.image%>" class="imagen_concierto" alt="">
-    </div>
-    <div class="texto_concierto">
-        <h2><%=evento.date%></h2>
-        <br>
-        <p>   <%=evento.description%> </p>
-        <br>
-        <h2><%=evento.currency%> <%=evento.prize%></h2>
-        <br>
-      <div class="contenedor-ciudad">
-      <% if (evento.agotado == "No"){%> 
-        <a type="button" href="/products/carrito" class="boton">Comprar</a>
-      <%}else{%>
-        <script>alert("Lo sentimos, este concierto se encuentra agotado")</script>
-        <button type="button" href="/products/carrito" class="boton">AGOTADO</button>
-      <%}%>
+      <div class="imagen_contenedor">
+          <img src="/img/<%=evento.image%>" class="imagen_concierto" alt="">
       </div>
-    </div>
+      <div class="texto_concierto">
+          <h2><%=evento.date%></h2>
+            <br>
+          <p>   <%=evento.description%> </p>
+            <br>
+          <h2><%=evento.currency%> <%=evento.prize%></h2>
+            <br>
+        <div class="contenedor-ciudad">
+        <% if (evento.agotado == "No"){%> 
+          <a type="button" href="/users/carrito" class="boton">Comprar</a>
+        <%}else{%>
+          <a type="button" href="#" class="boton bot-agoado">AGOTADO</a>
+        <%}%>
+      
+        </div>
+      </div>
   </section>
+<% if (locals.isLogged){ %> 
+
+    <form action="/products/editarEvento/<%=evento.id%>" method="GET">   
+      <input type="submit" class="boton editar" value="Editar Evento">
+    </form>
+
+    <form action="/products/eliminarEvento/<%=evento.id%>?_method=DELETE" method="POST">   
+      <input type="submit" class="boton editar" value="Eliminar Evento">
+    </form>
+<%}%>
     </main>
-    <% if (locals.isLogged){ %> 
-      <div class="div-abajo">
+
   
-        <form action="/products/editarEvento/<%=evento.id%>" method="GET">   
-          <div class="contenedor-boton">
-          <input type="submit" class="boton" value="Editar Evento">
-        </form>
-  
-        <form action="/products/eliminarEvento/<%=evento.id%>?_method=DELETE" method="POST">   
-          <input type="submit" class="boton" value="Eliminar Evento">
-      </div>
-      <%}%>
 
   <footer>
     <div class="inferior">
@@ -58,10 +58,10 @@
         <a href="https://www.twitter.com" target="_blank"><img class="iconos" src="/img/twitter.png" alt=""></a>
         </li>
         <li>
-        <a href="https://www.instagram.com"><img class="iconos" src="/img/instagram.png" alt=""></a>
+        <a href="https://www.instagram.com"><img class="iconos" src="/img/instagram.png" alt="Instagram"></a>
         </li>
         <li>
-        <a href="https://www.youtube.com"><img class="iconos" src="/img/youtube.png" alt=""></a>
+        <a href="https://www.youtube.com"><img class="iconos" src="/img/youtube.png" alt="YouTube"></a>
         </li>
         <li>
         <a href="https://www.spotify.com"><img class="iconos" src="/img/spotify.png" alt="spotify"></a>
