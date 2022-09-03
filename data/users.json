@@ -61,5 +61,14 @@
     "email": "rosariohuertaf@gmail.com",
     "avatar": "avatar-1659831664822.jpg",
     "password": "$2a$10$JvOPjx.tbpattq33esMZvO91kc9nOt.eU9lcN9z6XShdfUuNYQpV6"
+  },
+  {
+    "id": 1662209317715,
+    "nombre": "luis garza",
+    "user": "werox",
+    "nacimiento": "2022-09-28",
+    "email": "werox51@gmail.com",
+    "avatar": "avatar-1662209317636.jpg",
+    "password": "$2a$10$phDC5gJfr//RsOfH7bXDWussRnhj3X9EfclldNwV6ErCyFLeRjkhK"
   }
 ]

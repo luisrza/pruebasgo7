@@ -159,6 +159,22 @@ span{
 .navicon li{
     margin-top: 15px;
 }
+.avatar-nav{
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        position: relative; 
+        width: 30px; 
+        height: 30px; 
+        overflow: hidden; 
+        border-radius: 50%; 
+        filter: drop-shadow(.5px 1px 1px var(--barra));
+} 
+.avatar-nav img{
+            width: 100%; 
+            height: auto; 
+}
+
 
 @media (min-width: 768px) {
     .navicon{
@@ -980,5 +996,33 @@ button{
     .links:hover{
         color: var(--barra);
         transition: ease-in-out .75s;
+    }
+}
+
+/*Logueando*/
+.span-usuario{
+    color: var(--blanco2);
+    /*font-family: 'Roboto Mono', monospace;*/
+    font-size: 30px;
+}
+.txt-welcome{
+    color: var(--blanco1);
+}
+.avatar-welcome{
+    border-radius: 50%;
+    width: 25%;
+    border: var(--barra) solid 3px;
+}
+.links-welcome a{
+    text-decoration: none;
+    color: var(--barra);
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .links-welcome a:hover{
+
+        color: var(--blanco1);
+        
     }
 }
